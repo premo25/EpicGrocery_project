@@ -1,0 +1,55 @@
+<!-- <p>navbar works!</p> -->
+<header>
+    <nav>
+        <div class="bg-light border">
+            <div class="container">
+                 <div class="row py-2 d-flex align-items-center">
+                    <div class="col-2">
+                        <img src="assets/img/epicLogo.svg" alt="">
+                        <img src="assets/img/epicTitle.svg" alt="" >
+                    </div>
+                    <div class="col-2">
+                        <img src="assets/img/deliveryTruck.svg" alt="">
+                        <span>Free delivery all over UK</span>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group"> 
+                            <input type="text" class="form-control" placeholder="What are you looking for" aria-label="Username" aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search position-relative"></i></span>
+                    </div>
+    
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-6 text-end d-flex lign-item-center">
+                                
+                                <img src="assets/img/cartLogo.svg" alt="">
+                                <span><a class="link"[routerLink]="['/cart']" href="">My cart(0)</a></span>
+                            </div>
+                            <div class="col-6 d-flex gap-2">
+                               <div> <img src="assets/img/userLogo.svg"  alt="">
+                                <!-- <span *ngIf="!token"><a class="link" [routerLink]="['/sign-in']">Login</a></span> -->
+                                </div>
+                                
+                                <div class="gap-1 d-flex align-items-center">
+                                <span>Hello...</span>
+                                <i class="fa fa-cog  fa-2x ml-3" [matMenuTriggerFor]="menu" aria-hidden="true"></i>
+                                <mat-menu #menu="matMenu">
+                                    <button mat-menu-item>Your profile</button>                                   
+                                    <button mat-menu-item>Account setting</button>
+                                    <button mat-menu-item>Wishlist</button>
+                                    <button mat-menu-item [routerLink]="['/sign-in']">Sign-out</button>
+                                  </mat-menu>
+                                <!-- <button *ngIf="token" type="button" class="btn btn-dark" (click)="logout()">Sign out</button> -->
+                                </div>                                                                                               
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                 </div>
+            </div>
+        </div>
+    </nav>
+    
+</header> 
